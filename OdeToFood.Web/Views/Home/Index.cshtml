@@ -11,4 +11,9 @@
     </div>
 </div>
 
-
+<ul>
+    @foreach (OdeToFood.Data.Models.Restaurant restaurant in Model)
+	{
+        <li>@restaurant.Name, @restaurant.Cuisine</li>
+	}
+</ul>
